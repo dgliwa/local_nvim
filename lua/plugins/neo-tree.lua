@@ -12,6 +12,7 @@ return {
     },
     opts = function(_, opts)
       opts.filesystem.filtered_items.hide_dotfiles = false
-    end
+      opts.buffers = { show_unloaded = true }
+    end,
   }
 }
