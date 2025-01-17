@@ -60,6 +60,7 @@ return {
       },
       n = {
         ['<Leader>gG'] = { '<cmd>OpenInGHFileLines<CR>', desc = 'Open file in GitHub' },
+        ['<Leader>go'] = { '<cmd>Git<CR>', desc = 'Open fugitive' },
         ['<Leader>be'] = { '<cmd>Neotree toggle show buffers<CR>', desc = 'Toggle buffer explorer' },
         ['<Leader>bn'] = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = 'Next buffer' },
         ['<Leader>bm'] = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = 'Next buffer' },
