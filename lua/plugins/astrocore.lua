@@ -57,6 +57,7 @@ return {
       -- first key is the mode
       i = {
         ['<c-Enter>'] = { 'copilot#Accept("")', expr = true, replace_keycodes = false },
+        ['<c-]>'] = { '<Plug>(copilot-accept-word)' },
       },
       n = {
         ['<Leader>gG'] = { '<cmd>OpenInGHFileLines<CR>', desc = 'Open file in GitHub' },
