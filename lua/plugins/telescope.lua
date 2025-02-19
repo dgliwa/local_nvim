@@ -15,6 +15,7 @@ return {
               i = {
                 ["<C-z>"] = lga_actions.quote_prompt(),
                 ["<C-i>"] = lga_actions.quote_prompt({ postfix = " --iglob " }),
+                ["<Tab>"] = require('telescope.actions').toggle_selection + require('telescope.actions').move_selection_next,
               },
             },
           },
